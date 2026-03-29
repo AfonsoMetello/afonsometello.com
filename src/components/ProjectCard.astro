@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  status: string;
+  category: string;
+  slug: string;
+  index: number;
+  total: number;
+}
+
+const { title, description, status, category, slug, index, total } = Astro.props;
+const counter = `${String(index).padStart(2, "0")} / ${String(total).padStart(2, "0")}`;
+---
+
+<a
+  href={`/projects/${slug}`}
+  class="project-card group bg-surface-container-high p-8 md:p-12 flex flex-col justify-between min-h-[400px]"
+>
+  <div>
+    <div class="flex flex-wrap gap-3 mb-8">
+      <span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">{status}</span>
+      <span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">{category}</span>
+    </div>
+    <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-4">
+      {title}
+    </h2>
+    <p class="card-description text-secondary font-bold text-lg uppercase leading-snug">
+      {description}
+    </p>
+  </div>
+  <div class="mt-12 flex justify-between items-end">
+    <span class="material-symbols-outlined text-4xl">arrow_outward</span>
+    <span class="card-counter text-xs font-black opacity-30">{counter}</span>
+  </div>
+</a>

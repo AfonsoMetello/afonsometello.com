@@ -1,0 +1,27 @@
+---
+const badges = [
+  { icon: "military_tech", label: "OutSystems Champion" },
+  { icon: "school", label: "Certified Trainer" },
+  { icon: "groups", label: "Wonderbool Meetup Organizer" },
+];
+---
+
+<section id="community" class="py-32 px-8 bg-surface-container-lowest">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-black text-6xl md:text-8xl uppercase tracking-tighter mb-20 text-outline">COMMUNITY</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {badges.map((badge, i) => (
+        <div
+          class:list={[
+            "p-8 flex flex-col justify-between aspect-square group hover:bg-primary transition-none",
+            i % 2 === 0 ? "bg-surface-container-highest" : "bg-surface-container-high",
+            i % 2 !== 0 ? "lg:mt-12" : "",
+          ]}
+        >
+          <span class="material-symbols-outlined text-5xl group-hover:text-on-primary">{badge.icon}</span>
+          <p class="font-black text-2xl uppercase tracking-tighter group-hover:text-on-primary">{badge.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

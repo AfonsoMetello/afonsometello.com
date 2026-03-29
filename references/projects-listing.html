@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#e2e2e2",
+              "inverse-surface": "#e2e2e2",
+              "surface-tint": "#c6c6c7",
+              "primary": "#ffffff",
+              "outline-variant": "#474747",
+              "surface-container-low": "#1b1b1b",
+              "on-primary-fixed": "#ffffff",
+              "on-tertiary-fixed-variant": "#e4e2e1",
+              "surface-container-highest": "#353535",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-secondary": "#1b1c1c",
+              "tertiary": "#e4e2e1",
+              "primary-fixed": "#5d5f5f",
+              "surface-container-high": "#2a2a2a",
+              "on-tertiary-container": "#000000",
+              "inverse-on-surface": "#303030",
+              "tertiary-fixed-dim": "#474747",
+              "tertiary-container": "#919090",
+              "secondary-fixed-dim": "#acabab",
+              "primary-container": "#d4d4d4",
+              "on-primary-container": "#000000",
+              "secondary-container": "#464747",
+              "surface": "#131313",
+              "on-secondary-container": "#e3e2e2",
+              "on-surface-variant": "#c6c6c6",
+              "on-background": "#e2e2e2",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#5f5e5e",
+              "secondary-fixed": "#c7c6c6",
+              "on-secondary-fixed-variant": "#3b3b3c",
+              "primary-fixed-dim": "#454747",
+              "background": "#131313",
+              "on-primary": "#1a1c1c",
+              "on-tertiary-fixed": "#ffffff",
+              "inverse-primary": "#5d5f5f",
+              "outline": "#919191",
+              "surface-variant": "#353535",
+              "surface-container": "#1f1f1f",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "surface-container-lowest": "#0e0e0e",
+              "on-surface": "#e2e2e2",
+              "on-tertiary": "#1b1c1c",
+              "error-container": "#93000a",
+              "surface-bright": "#393939",
+              "secondary": "#c7c6c6"
+            },
+            fontFamily: {
+              "sans": ["Outfit", "sans-serif"],
+              "headline": ["Outfit", "sans-serif"],
+              "body": ["Outfit", "sans-serif"],
+              "label": ["Outfit", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #ffffff;
+            font-family: 'Outfit', sans-serif;
+        }
+        .project-card:hover {
+            background-color: #ffffff;
+            color: #131313;
+        }
+        .project-card:hover .text-secondary {
+            color: #131313;
+        }
+        .project-card:hover .tag {
+            border-color: #131313;
+            color: #131313;
+        }
+        .project-card:hover .material-symbols-outlined {
+            color: #131313;
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-6 py-4 md:px-12">
+<div class="text-2xl font-black text-white uppercase tracking-tighter font-['Outfit']">
+                AFONSO METELLO
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">COMMUNITY</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">SPEAKING</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">BLOG</a>
+<a class="text-white border-b-4 border-white pb-1 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">PROJECTS</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">CONTACT</a>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-20 md:mb-32">
+<h1 class="text-7xl md:text-[12rem] font-black uppercase tracking-tighter leading-[0.8] mb-8 mix-blend-difference">
+                PROJECTS
+            </h1>
+<div class="w-full h-1 bg-white mb-12"></div>
+<p class="max-w-2xl text-xl md:text-2xl font-bold uppercase leading-tight text-secondary">
+                ENGINEERING DIGITAL EXPERIENCES THROUGH BRUTALIST ARCHITECTURE AND PERFORMANCE-FIRST DEVELOPMENT.
+            </p>
+</header>
+<!-- Projects Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+<!-- Project Card 1 -->
+<div class="project-card group bg-surface-container-high p-8 md:p-12 transition-all duration-0 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="flex flex-wrap gap-3 mb-8">
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">LIVE</span>
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">OUTSYSTEMS FORGE</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-4">
+                        IMPACT BENCHMARK
+                    </h2>
+<p class="text-secondary font-bold text-lg uppercase leading-snug">
+                        Automated technical debt analysis and performance metrics for enterprise low-code ecosystems.
+                    </p>
+</div>
+<div class="mt-12 flex justify-between items-end">
+<span class="material-symbols-outlined text-4xl">arrow_outward</span>
+<span class="text-xs font-black opacity-30">01 / 04</span>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="project-card group bg-surface-container-high p-8 md:p-12 transition-all duration-0 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="flex flex-wrap gap-3 mb-8">
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">IN DEVELOPMENT</span>
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">MOBILE APP</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-4">
+                        CHAMA REPIQUE!
+                    </h2>
+<p class="text-secondary font-bold text-lg uppercase leading-snug">
+                        Real-time synchronization platform for traditional percussion groups and carnival parades.
+                    </p>
+</div>
+<div class="mt-12 flex justify-between items-end">
+<span class="material-symbols-outlined text-4xl">construction</span>
+<span class="text-xs font-black opacity-30">02 / 04</span>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="project-card group bg-surface-container-high p-8 md:p-12 transition-all duration-0 flex flex-col justify-between min-h-[400px] md:mt-12">
+<div>
+<div class="flex flex-wrap gap-3 mb-8">
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">COMING SOON</span>
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">OPEN SOURCE</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-4">
+                        RAW UI CORE
+                    </h2>
+<p class="text-secondary font-bold text-lg uppercase leading-snug">
+                        A headless design system engine optimized for high-contrast brutalist editorial layouts.
+                    </p>
+</div>
+<div class="mt-12 flex justify-between items-end">
+<span class="material-symbols-outlined text-4xl">schedule</span>
+<span class="text-xs font-black opacity-30">03 / 04</span>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="project-card group bg-surface-container-high p-8 md:p-12 transition-all duration-0 flex flex-col justify-between min-h-[400px] md:mt-12">
+<div>
+<div class="flex flex-wrap gap-3 mb-8">
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">LIVE</span>
+<span class="tag border-2 border-white px-3 py-1 text-xs font-black uppercase tracking-widest">MOBILE APP</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter leading-none mb-4">
+                        METELLO ARCHIVE
+                    </h2>
+<p class="text-secondary font-bold text-lg uppercase leading-snug">
+                        Personal photography portfolio and asset management system built for high-res street imagery.
+                    </p>
+</div>
+<div class="mt-12 flex justify-between items-end">
+<span class="material-symbols-outlined text-4xl">photo_library</span>
+<span class="text-xs font-black opacity-30">04 / 04</span>
+</div>
+</div>
+</div>
+<!-- Featured Image Section (Editorial Layout) -->
+<section class="mt-32 relative overflow-hidden h-[600px] bg-surface-container-lowest">
+<img alt="Industrial hardware" class="w-full h-full object-cover grayscale brightness-50 contrast-125" data-alt="high-contrast monochromatic shot of vintage computer hardware and industrial electronics on a dark metallic surface with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_Q0asJDcR604KD0myxr4lzsNa0vWx340UTzfNwcLe9oYA3QG1UzvNK5-0wp4qh4GuvstHbsgOYZMNRcMdHz_atu8R6txGZI--Lj_x72oSt-ioCIuKuX_jDXg6oW6FfCneGJUN7japZU0YcglJi_k0wD2x6PTPZUuZNKJsCc-6gQQDmfPeFhSasKVYwgbCzoBLosTjRGugafZJBecU2ttg6C38Uq0jRAk7jruqhnJpYr6gFCbS0OCc2OrHClIpAm7VUEzuuZULQZcf"/>
+<div class="absolute inset-0 flex items-center justify-center p-6 text-center">
+<div class="max-w-4xl">
+<h3 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none text-white drop-shadow-2xl">
+                        BUILT TO<br/>LAST LONGER<br/>THAN TRENDS
+                    </h3>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-900 w-full min-h-[400px] flex flex-col justify-between p-8 md:p-16">
+<div class="max-w-7xl mx-auto flex flex-col gap-12 w-full">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+<div class="text-4xl md:text-6xl font-black text-white leading-none font-['Outfit'] uppercase">
+                    AFONSO<br/>METELLO
+                </div>
+<div class="flex flex-wrap gap-6 text-sm font-black font-['Outfit'] uppercase">
+<a class="text-neutral-500 hover:text-white transition-colors duration-200" href="#">COMMUNITY</a>
+<a class="text-neutral-500 hover:text-white transition-colors duration-200" href="#">SPEAKING</a>
+<a class="text-neutral-500 hover:text-white transition-colors duration-200" href="#">BLOG</a>
+<a class="text-white underline underline-offset-8" href="#">PROJECTS</a>
+<a class="text-neutral-500 hover:text-white transition-colors duration-200" href="#">CONTACT</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 pt-12 border-t border-neutral-800">
+<div>
+<span class="text-[0.75rem] font-black uppercase text-neutral-600 block mb-4">SOCIAL</span>
+<div class="flex flex-col gap-2">
+<a class="text-white font-bold hover:underline" href="#">LINKEDIN</a>
+<a class="text-white font-bold hover:underline" href="#">GITHUB</a>
+<a class="text-white font-bold hover:underline" href="#">TWITTER</a>
+</div>
+</div>
+<div>
+<span class="text-[0.75rem] font-black uppercase text-neutral-600 block mb-4">LOCATION</span>
+<p class="text-white font-bold">LISBON, PT<br/>REMOTE WORLDWIDE</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 text-[0.75rem] font-black uppercase text-neutral-600">
+<span>© 2024 AFONSO METELLO. ALL RIGHTS RESERVED.</span>
+<span class="mt-4 md:mt-0">DESIGNED BY BRUTALISM</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,50 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => {
+    return import.meta.env.PROD ? !data.draft : true;
+  });
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const formattedDate = post.data.date
+  .toLocaleDateString("en-US", {
+    month: "long",
+    day: "2-digit",
+    year: "numeric",
+  })
+  .toUpperCase();
+---
+
+<Base title={`${post.data.title} — Afonso Metello`}>
+  <main class="pt-32 pb-24 px-6 md:px-12">
+    <header class="max-w-7xl mx-auto mb-20">
+      <div class="flex flex-col items-start gap-6">
+        <div class="flex flex-wrap gap-4 items-center text-secondary font-black uppercase text-xs tracking-[0.2em]">
+          <span>{formattedDate}</span>
+          {post.data.readingTime && <span class="w-1.5 h-1.5 bg-outline-variant"></span>}
+          {post.data.readingTime && <span>{post.data.readingTime}</span>}
+          <span class="w-1.5 h-1.5 bg-outline-variant"></span>
+          <span>{post.data.category}</span>
+        </div>
+        <h1
+          class="text-5xl md:text-8xl lg:text-[7rem] font-black uppercase leading-[0.9] tracking-tighter text-white max-w-5xl"
+        >
+          {post.data.title}
+        </h1>
+      </div>
+    </header>
+
+    <article class="max-w-[680px] mx-auto blog-content text-[18px] leading-[1.8] font-light text-on-surface-variant">
+      <Content />
+    </article>
+  </main>
+</Base>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#e2e2e2",
+              "inverse-surface": "#e2e2e2",
+              "surface-tint": "#c6c6c7",
+              "primary": "#ffffff",
+              "outline-variant": "#474747",
+              "surface-container-low": "#1b1b1b",
+              "on-primary-fixed": "#ffffff",
+              "on-tertiary-fixed-variant": "#e4e2e1",
+              "surface-container-highest": "#353535",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-secondary": "#1b1c1c",
+              "tertiary": "#e4e2e1",
+              "primary-fixed": "#5d5f5f",
+              "surface-container-high": "#2a2a2a",
+              "on-tertiary-container": "#000000",
+              "inverse-on-surface": "#303030",
+              "tertiary-fixed-dim": "#474747",
+              "tertiary-container": "#919090",
+              "secondary-fixed-dim": "#acabab",
+              "primary-container": "#d4d4d4",
+              "on-primary-container": "#000000",
+              "secondary-container": "#464747",
+              "surface": "#131313",
+              "on-secondary-container": "#e3e2e2",
+              "on-surface-variant": "#c6c6c6",
+              "on-background": "#e2e2e2",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#5f5e5e",
+              "secondary-fixed": "#c7c6c6",
+              "on-secondary-fixed-variant": "#3b3b3c",
+              "primary-fixed-dim": "#454747",
+              "background": "#131313",
+              "on-primary": "#1a1c1c",
+              "on-tertiary-fixed": "#ffffff",
+              "inverse-primary": "#5d5f5f",
+              "outline": "#919191",
+              "surface-variant": "#353535",
+              "surface-container": "#1f1f1f",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "surface-container-lowest": "#0e0e0e",
+              "on-surface": "#e2e2e2",
+              "on-tertiary": "#1b1c1c",
+              "error-container": "#93000a",
+              "surface-bright": "#393939",
+              "secondary": "#c7c6c6"
+            },
+            fontFamily: {
+              "outfit": ["Outfit", "sans-serif"],
+              "headline": ["Outfit", "sans-serif"],
+              "body": ["Outfit", "sans-serif"],
+              "label": ["Outfit", "sans-serif"]
+            },
+            borderRadius: {"none": "0", "DEFAULT": "0", "lg": "0", "xl": "0", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #131313;
+            color: #e2e2e2;
+            font-family: 'Outfit', sans-serif;
+        }
+        .text-bleed {
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-6 py-4 md:px-12">
+<a class="text-2xl font-black text-white uppercase tracking-tighter" href="#">AFONSO METELLO</a>
+<!-- Desktop Navigation -->
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">COMMUNITY</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">SPEAKING</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">BLOG</a>
+<a class="text-white border-b-4 border-white pb-1 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">PROJECTS</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">CONTACT</a>
+</div>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Project Title Header -->
+<header class="mb-12">
+<div class="flex flex-wrap items-baseline gap-4 md:gap-6">
+<h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none text-white">Impact Benchmark</h1>
+<div class="flex gap-2 mb-2">
+<span class="px-3 py-1 bg-white text-black text-[10px] md:text-xs font-black uppercase tracking-widest">LIVE</span>
+<span class="px-3 py-1 border border-outline-variant text-on-surface-variant text-[10px] md:text-xs font-black uppercase tracking-widest">OPEN SOURCE</span>
+</div>
+</div>
+</header>
+<!-- Project Preview Area -->
+<section class="mb-20 w-full">
+<div class="aspect-video w-full bg-surface-container-lowest border border-outline-variant/30 flex items-center justify-center overflow-hidden">
+<img alt="Project Preview" class="w-full h-full object-cover grayscale brightness-75 contrast-125" data-alt="High-contrast monochromatic UI dashboard screenshot showing data visualizations, clean typography, and a minimalist industrial aesthetic with deep blacks and sharp whites" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD72yFpXnjMgSwlNvwv2jPmY1YV9efCTlx8wzm85XgEYwwyy0j0FXwHCw9j86gE5ckkhAyFhn3n5Ip13pP-4H1xJPG18UlLl24SL9crYHzUGC6TmZuhLn-3_6PFP9v2E-ztgaIvffikn4cw-d2BRr9RtV-CagLOrY7KTXcFBZgp4dF5eMhXIRCIA8nJ1EdbS3UsOWvUQZSwX1q-HD5-A2qcQWsxVxy9RGxw3QH8E_vX2edjHsTBRl4nLX3zbVQY7vkq0vLZmx2RpJx9"/>
+</div>
+</section>
+<!-- Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Column: Description -->
+<article class="lg:col-span-8 space-y-8">
+<div class="space-y-6 text-lg md:text-xl font-light leading-relaxed text-on-surface-variant">
+<p>
+                        The Impact Benchmark is a comprehensive framework designed to quantify and visualize the performance metrics of high-frequency social initiatives. Built for organizations that demand transparency, it provides a raw, unfiltered look at data streams.
+                    </p>
+<p>
+                        This project challenges the traditional 'pretty' dashboard aesthetic by utilizing a brutalist design language that prioritizes information density and clarity above all else. By stripping away rounded corners and decorative gradients, the focus remains purely on the integrity of the data points.
+                    </p>
+<p>
+                        Engineered with a focus on speed and reliability, the benchmark utilizes custom-built aggregation engines to process millions of entry points in real-time, delivering a low-latency monitoring solution for critical infrastructure projects.
+                    </p>
+</div>
+<div class="pt-12">
+<h3 class="text-2xl font-black uppercase tracking-tight mb-8 text-white">Key Features</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container-low border-l-4 border-white">
+<h4 class="font-black uppercase text-sm tracking-widest mb-2">Real-time Telemetry</h4>
+<p class="text-sm font-semibold opacity-70">Instantaneous data synchronization across distributed nodes.</p>
+</div>
+<div class="p-6 bg-surface-container-low border-l-4 border-white">
+<h4 class="font-black uppercase text-sm tracking-widest mb-2">Brutalist Export</h4>
+<p class="text-sm font-semibold opacity-70">Generate high-contrast PDF reports optimized for print.</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Right Column: Metadata & Actions -->
+<aside class="lg:col-span-4 space-y-12">
+<div class="space-y-10">
+<!-- Metadata Block -->
+<div class="space-y-6">
+<div>
+<span class="block text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500 mb-2">STATUS</span>
+<p class="text-lg font-black uppercase text-white">ACTIVE / PRODUCTION</p>
+</div>
+<div>
+<span class="block text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500 mb-2">CATEGORY</span>
+<p class="text-lg font-black uppercase text-white">SYSTEM ARCHITECTURE</p>
+</div>
+<div>
+<span class="block text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500 mb-2">YEAR</span>
+<p class="text-lg font-black uppercase text-white">2024</p>
+</div>
+</div>
+<!-- CTA Buttons -->
+<div class="flex flex-col gap-3">
+<a class="group flex items-center justify-between bg-white text-black px-6 py-4 font-black uppercase tracking-widest text-sm hover:bg-neutral-200 transition-none" href="#">
+<span>LIVE DEMO</span>
+<span class="material-symbols-outlined transition-none group-hover:translate-x-1">arrow_outward</span>
+</a>
+<a class="group flex items-center justify-between border-2 border-outline-variant text-white px-6 py-4 font-black uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-none" href="#">
+<span>FORGE LISTING</span>
+<span class="material-symbols-outlined transition-none">launch</span>
+</a>
+<a class="group flex items-center justify-between border-2 border-outline-variant text-white px-6 py-4 font-black uppercase tracking-widest text-sm hover:bg-white hover:text-black transition-none" href="#">
+<span>GITHUB SOURCE</span>
+<span class="material-symbols-outlined">code</span>
+</a>
+</div>
+</div>
+<!-- Technologies Tag Cloud -->
+<div class="pt-8">
+<span class="block text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500 mb-4">STACK</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-[10px] font-black uppercase tracking-widest">REACT</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-[10px] font-black uppercase tracking-widest">RUST</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-[10px] font-black uppercase tracking-widest">D3.JS</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface text-[10px] font-black uppercase tracking-widest">POSTGRES</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-900 w-full min-h-[400px] flex flex-col justify-between p-8 md:p-16">
+<div class="max-w-7xl mx-auto flex flex-col gap-12 w-full">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="text-4xl md:text-6xl font-black text-white leading-none font-['Outfit'] uppercase">
+                    AFONSO<br/>METELLO.
+                </div>
+<div class="flex flex-col gap-4">
+<a class="text-neutral-500 hover:text-white font-['Outfit'] font-black uppercase text-lg transition-colors" href="#">COMMUNITY</a>
+<a class="text-neutral-500 hover:text-white font-['Outfit'] font-black uppercase text-lg transition-colors" href="#">SPEAKING</a>
+<a class="text-neutral-500 hover:text-white font-['Outfit'] font-black uppercase text-lg transition-colors" href="#">BLOG</a>
+<a class="text-white underline underline-offset-8 font-['Outfit'] font-black uppercase text-lg transition-colors" href="#">PROJECTS</a>
+<a class="text-neutral-500 hover:text-white font-['Outfit'] font-black uppercase text-lg transition-colors" href="#">CONTACT</a>
+</div>
+</div>
+<div class="pt-12 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-neutral-500 font-['Outfit'] font-black uppercase text-xs tracking-widest">
+                    © 2024 AFONSO METELLO. ALL RIGHTS RESERVED.
+                </p>
+<div class="flex gap-8">
+<a class="text-neutral-500 hover:text-white font-['Outfit'] font-black uppercase text-xs tracking-widest transition-colors" href="#">TWITTER</a>
+<a class="text-neutral-500 hover:text-white font-['Outfit'] font-black uppercase text-xs tracking-widest transition-colors" href="#">LINKEDIN</a>
+<a class="text-neutral-500 hover:text-white font-['Outfit'] font-black uppercase text-xs tracking-widest transition-colors" href="#">GITHUB</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

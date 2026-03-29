@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#e2e2e2",
+              "inverse-surface": "#e2e2e2",
+              "surface-tint": "#c6c6c7",
+              "primary": "#ffffff",
+              "outline-variant": "#474747",
+              "surface-container-low": "#1b1b1b",
+              "on-primary-fixed": "#ffffff",
+              "on-tertiary-fixed-variant": "#e4e2e1",
+              "surface-container-highest": "#353535",
+              "on-secondary-fixed": "#1b1c1c",
+              "on-secondary": "#1b1c1c",
+              "tertiary": "#e4e2e1",
+              "primary-fixed": "#5d5f5f",
+              "surface-container-high": "#2a2a2a",
+              "on-tertiary-container": "#000000",
+              "inverse-on-surface": "#303030",
+              "tertiary-fixed-dim": "#474747",
+              "tertiary-container": "#919090",
+              "secondary-fixed-dim": "#acabab",
+              "primary-container": "#d4d4d4",
+              "on-primary-container": "#000000",
+              "secondary-container": "#464747",
+              "surface": "#131313",
+              "on-secondary-container": "#e3e2e2",
+              "on-surface-variant": "#c6c6c6",
+              "on-background": "#e2e2e2",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#5f5e5e",
+              "secondary-fixed": "#c7c6c6",
+              "on-secondary-fixed-variant": "#3b3b3c",
+              "primary-fixed-dim": "#454747",
+              "background": "#131313",
+              "on-primary": "#1a1c1c",
+              "on-tertiary-fixed": "#ffffff",
+              "inverse-primary": "#5d5f5f",
+              "outline": "#919191",
+              "surface-variant": "#353535",
+              "surface-container": "#1f1f1f",
+              "on-error": "#690005",
+              "surface-dim": "#131313",
+              "surface-container-lowest": "#0e0e0e",
+              "on-surface": "#e2e2e2",
+              "on-tertiary": "#1b1c1c",
+              "error-container": "#93000a",
+              "surface-bright": "#393939",
+              "secondary": "#c7c6c6"
+            },
+            fontFamily: {
+              "outfit": ["Outfit", "sans-serif"],
+              "mono": ["monospace"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #131313;
+            color: #e2e2e2;
+        }
+        .blog-content p {
+            margin-bottom: 2.5rem;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-6 py-4 md:px-12">
+<div class="text-2xl font-black text-white uppercase tracking-tighter">
+                AFONSO METELLO
+            </div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">COMMUNITY</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">SPEAKING</a>
+<a class="text-white border-b-4 border-white pb-1 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">BLOG</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">PROJECTS</a>
+<a class="text-neutral-400 hover:text-white transition-colors duration-0 font-['Outfit'] font-black uppercase tracking-tighter text-sm" href="#">CONTACT</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-white">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto mb-20">
+<div class="flex flex-col items-start gap-6">
+<div class="flex flex-wrap gap-4 items-center text-secondary font-black uppercase text-xs tracking-[0.2em]">
+<span>OCTOBER 24, 2024</span>
+<span class="w-1.5 h-1.5 bg-outline-variant"></span>
+<span>12 MIN READ</span>
+<span class="w-1.5 h-1.5 bg-outline-variant"></span>
+<span>ARCHITECTURE</span>
+</div>
+<h1 class="text-5xl md:text-8xl lg:text-[7rem] font-black uppercase leading-[0.9] tracking-tighter text-white max-w-5xl">
+                    How AI Changed the Way I Architect Solutions
+                </h1>
+</div>
+</header>
+<!-- Featured Image -->
+<section class="max-w-7xl mx-auto mb-24 aspect-[21/9] overflow-hidden">
+<img alt="Architectural visualization" class="w-full h-full object-cover grayscale contrast-125" data-alt="Cinematic wide shot of high-tech server room with glowing blue lights and architectural wireframe overlays in a dark monochromatic industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_6f6JTMd5_BY6pPx4puK69uREXSVbejujjrrKCjcos5ZADUBJ3AL_IfiRyGzOrDJ86gii-z3Sdc9Hrj1hKzg0Ll8oQFmLeoec5fCuy977wBB8OZYQPhQS3yZkvpx_6KMa9BhsUZKlUdU44uTUXAd8xWM055G_TAjZ8KWLMFkI94fTXDLvEpjt_kBQoucJJA5dm8cpxpp-yJlD8217iNwQLFxCdX6CLF6j4pwKUTYsXEMYfuw_cZFZ_0iIE-5KDyfUlAA7hYjJNdY1"/>
+</section>
+<!-- Blog Body -->
+<article class="max-w-[680px] mx-auto blog-content text-[18px] leading-[1.8] font-light text-on-surface-variant">
+<p>
+                In the last eighteen months, the traditional workflow of a solutions architect has undergone a fundamental shift. What used to be a process of manual diagramming and hours spent debating structural patterns has transformed into a high-velocity dialogue with intelligent systems. This isn't just about code generation; it's about shifting the cognitive load from syntax to system design.
+            </p>
+<p>
+                When I first began integrating Large Language Models into my architectural phase, I was skeptical. I viewed them as sophisticated autocomplete tools. However, the true power lies in their ability to simulate complex failure modes across distributed systems in seconds.
+            </p>
+<blockquote class="border-l-4 border-white pl-8 my-16 py-2 italic text-white text-2xl font-semibold leading-relaxed">
+                "Architecture is no longer about building static blueprints; it is about steering dynamic systems that learn to optimize themselves."
+            </blockquote>
+<p>
+                Take, for example, the implementation of event-driven architectures. Instead of manually mapping every potential race condition, I now use custom-tuned models to analyze the <code class="bg-surface-container-highest px-2 py-0.5 font-mono text-sm text-primary">protobuf</code> schemas and suggest idempotent handling strategies that I might have overlooked during the initial whiteboarding session.
+            </p>
+<div class="my-16 bg-surface-container-lowest p-8 border-l border-outline-variant">
+<h3 class="font-black uppercase text-white mb-6 text-xl tracking-tight">Key Architectural Shifts</h3>
+<ul class="space-y-4 font-normal">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-sm mt-1">terminal</span>
+<span>Shift from manual boilerplate to AI-assisted infrastructure-as-code (IaC).</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-sm mt-1">terminal</span>
+<span>Proactive vulnerability scanning at the design level rather than post-deployment.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-sm mt-1">terminal</span>
+<span>Automated documentation that stays synced with evolving repository structures.</span>
+</li>
+</ul>
+</div>
+<p>
+                The future belongs to the "Augmented Architect." We are entering an era where our value is defined by the quality of our constraints and the clarity of our intent. As the manual labor of implementation is abstracted away, the structural integrity and long-term scalability of our solutions become the only metrics that matter.
+            </p>
+<p>
+                We must move beyond the fear of replacement and embrace the reality of enhancement. AI doesn't replace the architect; it replaces the architect's friction.
+            </p>
+<!-- Tags -->
+<div class="mt-20 flex flex-wrap gap-3">
+<span class="bg-surface-container-high px-4 py-2 text-[10px] font-black uppercase tracking-widest text-primary">#ARTIFICIALINTELLIGENCE</span>
+<span class="bg-surface-container-high px-4 py-2 text-[10px] font-black uppercase tracking-widest text-primary">#SYSTEMDESIGN</span>
+<span class="bg-surface-container-high px-4 py-2 text-[10px] font-black uppercase tracking-widest text-primary">#TECH2024</span>
+</div>
+</article>
+<!-- Newsletter / CTA -->
+<section class="max-w-7xl mx-auto mt-32 bg-primary text-on-primary p-12 md:p-24 flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-6xl font-black uppercase leading-none tracking-tighter mb-8">Get the latest architectural insights.</h2>
+<p class="text-xl font-bold uppercase tracking-tight opacity-80">Join the community of 5,000+ builders.</p>
+</div>
+<div class="w-full md:w-auto flex flex-col gap-4">
+<input class="bg-transparent border-b-4 border-on-primary p-4 font-black uppercase placeholder:text-on-primary/30 focus:outline-none w-full md:w-80" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+<button class="bg-on-primary text-primary px-8 py-4 font-black uppercase tracking-widest hover:bg-black hover:text-white transition-all">SUBSCRIBE NOW</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-900 w-full min-h-[400px] flex flex-col justify-between p-8 md:p-16">
+<div class="max-w-7xl mx-auto w-full flex flex-col gap-12">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="text-4xl md:text-6xl font-black text-white leading-none font-['Outfit'] uppercase">
+                    AFONSO<br/>METELLO.
+                </div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div class="flex flex-col gap-4">
+<span class="text-neutral-500 font-black uppercase text-xs tracking-widest">NAVIGATION</span>
+<a class="text-neutral-500 hover:text-white transition-colors font-black uppercase text-sm" href="#">COMMUNITY</a>
+<a class="text-white underline underline-offset-8 font-black uppercase text-sm" href="#">BLOG</a>
+<a class="text-neutral-500 hover:text-white transition-colors font-black uppercase text-sm" href="#">PROJECTS</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-neutral-500 font-black uppercase text-xs tracking-widest">SOCIAL</span>
+<a class="text-neutral-500 hover:text-white transition-colors font-black uppercase text-sm" href="#">TWITTER</a>
+<a class="text-neutral-500 hover:text-white transition-colors font-black uppercase text-sm" href="#">LINKEDIN</a>
+<a class="text-neutral-500 hover:text-white transition-colors font-black uppercase text-sm" href="#">GITHUB</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-neutral-500 font-black uppercase text-xs tracking-widest">LEGAL</span>
+<a class="text-neutral-500 hover:text-white transition-colors font-black uppercase text-sm" href="#">PRIVACY</a>
+<a class="text-neutral-500 hover:text-white transition-colors font-black uppercase text-sm" href="#">TERMS</a>
+</div>
+</div>
+</div>
+<div class="pt-12 border-t border-neutral-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-neutral-500 font-black uppercase text-xs tracking-widest">© 2024 AFONSO METELLO. ALL RIGHTS RESERVED.</p>
+<div class="flex gap-8">
+<span class="material-symbols-outlined text-white cursor-pointer hover:scale-110 transition-transform">arrow_upward</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

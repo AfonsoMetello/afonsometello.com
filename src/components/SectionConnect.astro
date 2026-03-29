@@ -1,0 +1,35 @@
+---
+const connectLinks = [
+  { label: "LINKEDIN", href: "https://www.linkedin.com/in/afonsometello" },
+  { label: "GITHUB", href: "https://github.com/afonsometello" },
+  { label: "WONDERBOOL", href: "https://www.meetup.com/Wonderbool-Lisbon/" },
+  { label: "BOOL", href: "https://bool.pt" },
+];
+---
+
+<section id="connect" class="py-32 px-8 bg-primary text-on-primary">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="font-black text-6xl md:text-9xl uppercase tracking-tighter mb-20 leading-none">
+      LET'S BUILD<br />THE FUTURE.
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {connectLinks.map((link) => (
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center justify-between border-b-4 border-on-primary py-8 hover:bg-on-primary hover:text-primary px-4 transition-none"
+        >
+          <span class="font-black text-3xl uppercase tracking-tighter">{link.label}</span>
+          <span class="material-symbols-outlined text-4xl">north_east</span>
+        </a>
+      ))}
+    </div>
+    <a
+      href="mailto:afonso@afonsometello.com"
+      class="block mt-20 text-center font-black text-4xl md:text-7xl uppercase tracking-tighter hover:underline decoration-8"
+    >
+      AFONSO@AFONSOMETELLO.COM
+    </a>
+  </div>
+</section>

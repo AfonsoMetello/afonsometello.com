@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-container": "#93000a",
+              "surface-dim": "#131313",
+              "on-error-container": "#ffdad6",
+              "on-secondary": "#1b1c1c",
+              "tertiary-container": "#919090",
+              "secondary-fixed": "#c7c6c6",
+              "on-secondary-container": "#e3e2e2",
+              "surface-container-highest": "#353535",
+              "surface-variant": "#353535",
+              "primary": "#ffffff",
+              "outline-variant": "#474747",
+              "on-tertiary-fixed": "#ffffff",
+              "on-surface": "#e2e2e2",
+              "surface-container-high": "#2a2a2a",
+              "inverse-primary": "#5d5f5f",
+              "on-error": "#690005",
+              "secondary": "#c7c6c6",
+              "tertiary": "#e4e2e1",
+              "surface-container-low": "#1b1b1b",
+              "on-background": "#e2e2e2",
+              "on-primary-fixed": "#ffffff",
+              "on-primary-container": "#000000",
+              "secondary-container": "#464747",
+              "outline": "#919191",
+              "on-primary": "#1a1c1c",
+              "surface-tint": "#c6c6c7",
+              "error": "#ffb4ab",
+              "inverse-surface": "#e2e2e2",
+              "on-tertiary": "#1b1c1c",
+              "surface-container": "#1f1f1f",
+              "surface-bright": "#393939",
+              "on-tertiary-container": "#000000",
+              "primary-fixed-dim": "#454747",
+              "tertiary-fixed-dim": "#474747",
+              "on-tertiary-fixed-variant": "#e4e2e1",
+              "on-primary-fixed-variant": "#e2e2e2",
+              "on-secondary-fixed-variant": "#3b3b3c",
+              "primary-fixed": "#5d5f5f",
+              "on-surface-variant": "#c6c6c6",
+              "tertiary-fixed": "#5f5e5e",
+              "on-secondary-fixed": "#1b1c1c",
+              "primary-container": "#d4d4d4",
+              "background": "#131313",
+              "surface": "#131313",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-on-surface": "#303030",
+              "secondary-fixed-dim": "#acabab"
+            },
+            fontFamily: {
+              "sans": ["Outfit", "sans-serif"],
+              "headline": ["Outfit", "sans-serif"],
+              "body": ["Outfit", "sans-serif"],
+              "label": ["Outfit", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grayscale-image {
+            filter: grayscale(100%) contrast(120%);
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px #FFFFFF;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-sans selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-[#131313]/70 backdrop-blur-md">
+<div class="text-2xl font-black uppercase tracking-tighter text-white">AFONSO METELLO</div>
+<div class="hidden md:flex gap-8">
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-sm text-white border-b-4 border-white pb-1" href="#">WORK</a>
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-sm text-[#c7c6c6] hover:text-white transition-none" href="#">STORY</a>
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-sm text-[#c7c6c6] hover:text-white transition-none" href="#">STAGES</a>
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-sm text-[#c7c6c6] hover:text-white transition-none" href="#">JOURNAL</a>
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-sm text-[#c7c6c6] hover:text-white transition-none" href="#">CONTACT</a>
+</div>
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex flex-col justify-end pt-32 overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0">
+<img alt="Afonso Metello portrait" class="w-full h-full object-cover grayscale-image object-right" src="REPLACE_WITH_PHOTO_URL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-8 pb-20 max-w-7xl mx-auto w-full">
+<h1 class="font-black text-[12vw] md:text-[10rem] leading-[0.8] tracking-tighter uppercase mb-4 mix-blend-difference">
+                AFONSO<br/>METELLO
+            </h1>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-xl">
+<p class="font-black text-2xl md:text-4xl uppercase tracking-tighter text-primary mb-2">
+                        FOUNDER / AI-AUGMENTED ARCHITECT / OUTSYSTEMS PARTNER
+                    </p>
+<p class="font-bold text-lg uppercase tracking-widest text-secondary">
+                        20+ YEARS OF SOFTWARE EXPERTISE
+                    </p>
+</div>
+<button class="bg-primary text-on-primary px-12 py-6 font-black text-xl uppercase tracking-tighter hover:bg-on-primary hover:text-primary transition-none w-full md:w-auto">
+                    GET IN TOUCH
+                </button>
+</div>
+</div>
+</header>
+<!-- Community Section -->
+<section class="py-32 px-8 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-black text-6xl md:text-8xl uppercase tracking-tighter mb-20 text-outline">COMMUNITY</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-surface-container-highest p-8 flex flex-col justify-between aspect-square group hover:bg-primary transition-none">
+<span class="material-symbols-outlined text-5xl group-hover:text-on-primary">military_tech</span>
+<p class="font-black text-2xl uppercase tracking-tighter group-hover:text-on-primary">OutSystems Champion</p>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col justify-between aspect-square group hover:bg-primary transition-none lg:mt-12">
+<span class="material-symbols-outlined text-5xl group-hover:text-on-primary">school</span>
+<p class="font-black text-2xl uppercase tracking-tighter group-hover:text-on-primary">Certified Trainer</p>
+</div>
+<div class="bg-surface-container-highest p-8 flex flex-col justify-between aspect-square group hover:bg-primary transition-none">
+<span class="material-symbols-outlined text-5xl group-hover:text-on-primary">groups</span>
+<p class="font-black text-2xl uppercase tracking-tighter group-hover:text-on-primary">Wonderbool Meetup Organizer</p>
+</div>
+<div class="bg-surface-container-high p-8 flex flex-col justify-between aspect-square group hover:bg-primary transition-none lg:mt-12">
+<span class="material-symbols-outlined text-5xl group-hover:text-on-primary">hub</span>
+<p class="font-black text-2xl uppercase tracking-tighter group-hover:text-on-primary">Claude Partner Network</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Speaking Section -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-20">
+<div class="md:w-1/3">
+<h2 class="font-black text-6xl md:text-8xl uppercase tracking-tighter sticky top-32">SPEAKING</h2>
+</div>
+<div class="md:w-2/3 space-y-12">
+<div class="group border-b border-outline-variant/30 pb-12">
+<span class="text-secondary font-black text-sm tracking-widest uppercase mb-4 block">01 / KEYNOTE</span>
+<h3 class="font-black text-4xl md:text-6xl uppercase tracking-tighter group-hover:translate-x-4 transition-none cursor-default">
+                        The Future of AI
+                    </h3>
+<p class="text-secondary font-bold mt-4 max-w-md">Exploring the convergence of generative intelligence and rapid application delivery.</p>
+</div>
+<div class="group border-b border-outline-variant/30 pb-12 ml-4 md:ml-12">
+<span class="text-secondary font-black text-sm tracking-widest uppercase mb-4 block">02 / WORKSHOP</span>
+<h3 class="font-black text-4xl md:text-6xl uppercase tracking-tighter group-hover:translate-x-4 transition-none cursor-default">
+                        Architecting for 100M+ Users
+                    </h3>
+<p class="text-secondary font-bold mt-4 max-w-md">Battle-tested strategies for global-scale software infrastructure.</p>
+</div>
+<div class="group border-b border-outline-variant/30 pb-12 ml-8 md:ml-24">
+<span class="text-secondary font-black text-sm tracking-widest uppercase mb-4 block">03 / PANEL</span>
+<h3 class="font-black text-4xl md:text-6xl uppercase tracking-tighter group-hover:translate-x-4 transition-none cursor-default">
+                        Scaling Engineering Teams
+                    </h3>
+<p class="text-secondary font-bold mt-4 max-w-md">The human side of hyper-growth: culture, processes, and leadership.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Connect Section -->
+<section class="py-32 px-8 bg-primary text-on-primary">
+<div class="max-w-7xl mx-auto">
+<h2 class="font-black text-6xl md:text-9xl uppercase tracking-tighter mb-20 leading-none">LET'S BUILD<br/>THE FUTURE.</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<a class="flex items-center justify-between border-b-4 border-on-primary py-8 hover:bg-on-primary hover:text-primary px-4 transition-none" href="#">
+<span class="font-black text-3xl uppercase tracking-tighter">LINKEDIN</span>
+<span class="material-symbols-outlined text-4xl">north_east</span>
+</a>
+<a class="flex items-center justify-between border-b-4 border-on-primary py-8 hover:bg-on-primary hover:text-primary px-4 transition-none" href="#">
+<span class="font-black text-3xl uppercase tracking-tighter">GITHUB</span>
+<span class="material-symbols-outlined text-4xl">north_east</span>
+</a>
+<a class="flex items-center justify-between border-b-4 border-on-primary py-8 hover:bg-on-primary hover:text-primary px-4 transition-none" href="#">
+<span class="font-black text-3xl uppercase tracking-tighter">WONDERBOOL</span>
+<span class="material-symbols-outlined text-4xl">north_east</span>
+</a>
+<a class="flex items-center justify-between border-b-4 border-on-primary py-8 hover:bg-on-primary hover:text-primary px-4 transition-none" href="#">
+<span class="font-black text-3xl uppercase tracking-tighter">BOOL</span>
+<span class="material-symbols-outlined text-4xl">north_east</span>
+</a>
+</div>
+<a class="block mt-20 text-center font-black text-4xl md:text-7xl uppercase tracking-tighter hover:underline decoration-8" href="mailto:afonso@afonsometello.com">
+                AFONSO@AFONSOMETELLO.COM
+            </a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] w-full flex flex-col gap-12 py-20 px-8">
+<div class="max-w-7xl mx-auto w-full">
+<div class="flex flex-wrap gap-8 md:gap-16 mb-20">
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-4xl md:text-6xl text-[#353535] hover:text-white transition-none hover:translate-x-2" href="https://www.linkedin.com/in/afonsometello" target="_blank">LINKEDIN</a>
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-4xl md:text-6xl text-[#353535] hover:text-white transition-none hover:translate-x-2" href="https://github.com/afonsometello" target="_blank">GITHUB</a>
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-4xl md:text-6xl text-[#353535] hover:text-white transition-none hover:translate-x-2" href="https://www.meetup.com/Wonderbool-Lisbon/" target="_blank">WONDERBOOL</a>
+<a class="font-['Outfit'] font-black uppercase tracking-tighter text-4xl md:text-6xl text-[#353535] hover:text-white transition-none hover:translate-x-2" href="mailto:afonso@afonsometello.com">EMAIL</a>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 border-t border-outline-variant/20 pt-12">
+<div class="text-white font-black uppercase text-2xl">AFONSO METELLO</div>
+<p class="text-secondary font-bold text-sm tracking-widest uppercase text-right">
+                ©2026 AFONSO METELLO. ALL RIGHTS RESERVED.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

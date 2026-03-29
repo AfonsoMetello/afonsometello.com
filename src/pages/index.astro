@@ -1,17 +1,29 @@
 ---
+import Base from "../layouts/Base.astro";
+import HeroHome from "../components/HeroHome.astro";
+import SectionProjects from "../components/SectionProjects.astro";
+import SectionSpeaking from "../components/SectionSpeaking.astro";
+import SectionBlog from "../components/SectionBlog.astro";
+import SectionCommunity from "../components/SectionCommunity.astro";
+import SectionConnect from "../components/SectionConnect.astro";
+import { getCollection } from "astro:content";
 
+const projects = (await getCollection("projects")).sort((a, b) => a.data.order - b.data.order);
+
+const posts = (
+  await getCollection("blog", ({ data }) => {
+    return import.meta.env.PROD ? !data.draft : true;
+  })
+)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base title="Afonso Metello — Founder, AI-Augmented Architect, OutSystems Partner">
+  <HeroHome />
+  <SectionProjects projects={projects} />
+  <SectionSpeaking />
+  <SectionBlog posts={posts} />
+  <SectionCommunity />
+  <SectionConnect />
+</Base>

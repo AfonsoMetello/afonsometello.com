@@ -1,0 +1,31 @@
+---
+const footerLinks = [
+  { label: "LINKEDIN", href: "https://www.linkedin.com/in/afonsometello" },
+  { label: "GITHUB", href: "https://github.com/afonsometello" },
+  { label: "WONDERBOOL", href: "https://www.meetup.com/Wonderbool-Lisbon/" },
+  { label: "EMAIL", href: "mailto:afonso@afonsometello.com" },
+];
+---
+
+<footer class="bg-surface-container-lowest w-full flex flex-col gap-12 py-20 px-8">
+  <div class="max-w-7xl mx-auto w-full">
+    <div class="flex flex-wrap gap-8 md:gap-16 mb-20">
+      {footerLinks.map((link) => (
+        <a
+          href={link.href}
+          target={link.href.startsWith("mailto:") ? undefined : "_blank"}
+          rel={link.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+          class="font-black uppercase tracking-tighter text-4xl md:text-6xl text-surface-container-highest hover:text-white transition-none hover:translate-x-2"
+        >
+          {link.label}
+        </a>
+      ))}
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-end gap-8 border-t border-outline-variant/20 pt-12">
+      <div class="text-white font-black uppercase text-2xl">AFONSO METELLO</div>
+      <p class="text-secondary font-bold text-sm tracking-widest uppercase text-right">
+        &copy;2026 AFONSO METELLO. ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </div>
+</footer>
