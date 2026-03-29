@@ -1,8 +1,8 @@
 ---
 const badges = [
-  { icon: "military_tech", label: "OutSystems Champion" },
-  { icon: "school", label: "Certified Trainer" },
-  { icon: "groups", label: "Wonderbool Meetup Organizer" },
+  { icon: "military_tech", label: "OutSystems Champion", description: "Recognized community leader. Mentoring developers and growing the ecosystem across Portugal and the Netherlands." },
+  { icon: "school", label: "Certified Trainer", description: "Official OutSystems trainer. Running boot camps and preparing teams for certification." },
+  { icon: "groups", label: "Wonderbool Meetup Organizer", description: "Founded and run indie OutSystems community meetups in 4 cities since 2019. By the community, for the community." },
 ];
 ---
 
@@ -19,7 +19,10 @@ const badges = [
           ]}
         >
           <span class="material-symbols-outlined text-5xl group-hover:text-on-primary">{badge.icon}</span>
-          <p class="font-black text-2xl uppercase tracking-tighter group-hover:text-on-primary">{badge.label}</p>
+          <div>
+            <p class="font-black text-2xl uppercase tracking-tighter group-hover:text-on-primary">{badge.label}</p>
+            <p class="text-secondary font-semibold uppercase text-sm mt-3 group-hover:text-on-primary">{badge.description}</p>
+          </div>
         </div>
       ))}
     </div>
