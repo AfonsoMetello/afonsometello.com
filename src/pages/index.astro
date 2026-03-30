@@ -1,29 +1,17 @@
 ---
-import Base from "../layouts/Base.astro";
-import HeroHome from "../components/HeroHome.astro";
-import SectionProjects from "../components/SectionProjects.astro";
-import SectionSpeaking from "../components/SectionSpeaking.astro";
-import SectionBlog from "../components/SectionBlog.astro";
-import SectionCommunity from "../components/SectionCommunity.astro";
-import SectionConnect from "../components/SectionConnect.astro";
-import { getCollection } from "astro:content";
-
-const projects = (await getCollection("projects")).sort((a, b) => a.data.order - b.data.order);
-
-const posts = (
-  await getCollection("blog", ({ data }) => {
-    return import.meta.env.PROD ? !data.draft : true;
-  })
-)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 3);
+import "../styles/global.css";
 ---
 
-<Base title="Afonso Metello — Founder, AI-Augmented Architect, OutSystems Partner">
-  <HeroHome />
-  <SectionProjects projects={projects} />
-  <SectionSpeaking />
-  <SectionBlog posts={posts} />
-  <SectionCommunity />
-  <SectionConnect />
-</Base>
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;900&display=swap" rel="stylesheet" />
+    <title>Afonso Metello</title>
+  </head>
+  <body class="bg-surface text-on-surface font-sans antialiased min-h-screen flex items-center justify-center">
+    <p class="font-light text-2xl tracking-wide text-secondary">Soon...</p>
+  </body>
+</html>
