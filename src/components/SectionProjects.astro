@@ -23,7 +23,7 @@ const { projects } = Astro.props;
       <h2 class="font-black text-6xl md:text-8xl uppercase tracking-tighter italic">PROJECTS</h2>
       <a
         href="/projects"
-        class="font-black text-sm uppercase tracking-widest text-secondary hover:text-white transition-none"
+        class="font-black text-sm uppercase tracking-widest text-secondary opacity-70 hover:opacity-100 hover:text-white transition-none"
       >
         VIEW ALL <span class="material-symbols-outlined align-middle text-sm">arrow_forward</span>
       </a>
@@ -38,6 +38,7 @@ const { projects } = Astro.props;
           slug={project.id}
           index={i + 1}
           total={projects.length}
+          image={`/projects/${project.id}.png`}
         />
       ))}
     </div>

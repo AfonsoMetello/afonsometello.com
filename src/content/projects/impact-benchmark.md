@@ -1,6 +1,6 @@
 ---
 title: "Impact Benchmark"
-description: "Measure what your team actually produces. Productivity, quality, and waste — scored by real complexity, not deploy counts."
+description: "Measures productivity, quality and waste against real delivery complexity."
 status: "IN DEVELOPMENT"
 category: "OUTSYSTEMS FORGE"
 year: "2026"

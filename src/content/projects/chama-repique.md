@@ -1,6 +1,6 @@
 ---
 title: "Chama Repique!"
-description: "Play a repique call, a virtual bateria responds. TensorFlow + OutSystems."
+description: "A repique call triggers a virtual bateria response in real time."
 status: "IN DEVELOPMENT"
 category: "MOBILE APP"
 year: "2026"

@@ -29,6 +29,7 @@ const projects = (await getCollection("projects")).sort((a, b) => a.data.order -
             slug={project.id}
             index={i + 1}
             total={projects.length}
+            image={`/projects/${project.id}.png`}
           />
         </div>
       ))}
