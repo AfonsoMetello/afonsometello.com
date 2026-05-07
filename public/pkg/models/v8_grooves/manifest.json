@@ -1,50 +1,49 @@
 {
   "bundle_name": "v8_grooves_bundle",
-  "version": "1.0.0",
-  "base_model": "mlx-community/SmolLM2-360M-Instruct",
-  "adapter": "v8_grooves_mlx",
-  "total_size": 587387776,
-  "total_sha256": "5fffd3c88887199ef3fa8c66a1abca33167e8bb9c7ffcd39eb97ae28b2002d18",
+  "version": "2.0.0",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "fused": true,
+  "total_size": 574648304,
+  "total_sha256": "00bfe0d74132ac8cbd8d90b749134bfd02059127b43f42876e67603a7187eb88",
   "chunk_size": 94371840,
   "chunks": [
     {
       "filename": "v8_grooves_bundle.tar.gz.001",
       "size": 94371840,
-      "sha256": "4bd91ff4d42432ff3134befd2d8490726b2aa77609afa5f5463685efe74dd633"
+      "sha256": "483dbe3e8b17730533429af04b8c55055c20304468ddda9d0511bf56f7461079"
     },
     {
       "filename": "v8_grooves_bundle.tar.gz.002",
       "size": 94371840,
-      "sha256": "209cd46b2e67c955ea8c091a7d13b392866347e150fa644cfecd285327ac4454"
+      "sha256": "b5cf2950e59a6e6933c698c9d3437dbdc0926d61a6be142ed34ef445c5f64c07"
     },
     {
       "filename": "v8_grooves_bundle.tar.gz.003",
       "size": 94371840,
-      "sha256": "d2436db6d63d3c06eca24c2d0d137279cfc28ad8945b5c9dd9f66de688e571e7"
+      "sha256": "48e90ec2322e404f5e3ec8f183050baf375e5a52024be91742396d18d0bf4cd6"
     },
     {
       "filename": "v8_grooves_bundle.tar.gz.004",
       "size": 94371840,
-      "sha256": "ca9da733c77f6fe28703b74f99aa26509e567e1c5269907b12a7ff4ce1861673"
+      "sha256": "68e624766702b88beb354709064daa1ed414ca25d852d414f8171efea3eff6e8"
     },
     {
       "filename": "v8_grooves_bundle.tar.gz.005",
       "size": 94371840,
-      "sha256": "3e6eb8180226485af3319d5dd06011cd717034fa321434195890f963ce8fabdf"
+      "sha256": "040c6df21208d96c1341d4925029a0dad823a13f5c343c8355ba0cefc5724cec"
     },
     {
       "filename": "v8_grooves_bundle.tar.gz.006",
       "size": 94371840,
-      "sha256": "1b08cf0abfaf0fb8a573436fb38808be2db50644de71e7a3279e13de93fb0dc0"
+      "sha256": "94c41dde546c16f88235003df1e23e377c1e38214a39bec857f7e13bf3b249ff"
     },
     {
       "filename": "v8_grooves_bundle.tar.gz.007",
-      "size": 21156736,
-      "sha256": "786d91dbedf221099c73d8b34661ce318b7a3061eaeeb4104379b0f41b99680d"
+      "size": 8417264,
+      "sha256": "0115c983b8f25bb935097844cf2893af93fd350ad4ef1ac97a2c7d8f1c784c07"
     }
   ],
   "extract_subdirs": [
-    "SmolLM2-360M-base",
-    "v8_grooves_mlx"
+    "v8_fused_mlx"
   ]
 }
