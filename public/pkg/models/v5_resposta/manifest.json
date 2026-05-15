@@ -1,0 +1,36 @@
+{
+  "bundle_name": "v5_resposta_gguf",
+  "version": "1.0.0",
+  "format": "gguf",
+  "model_filename": "v5_resposta-Q8_0.gguf",
+  "total_size": 386405312,
+  "total_sha256": "53b5979cca0e9b7d10f771ed8205994d28df740382f80132a433d7de0e3795be",
+  "chunk_size": 94371840,
+  "chunks": [
+    {
+      "filename": "v5_resposta-Q8_0.gguf.001",
+      "size": 94371840,
+      "sha256": "f27544c6037246457974207698045c1ae274ef8ef05a3e05c18e8c2a304242de"
+    },
+    {
+      "filename": "v5_resposta-Q8_0.gguf.002",
+      "size": 94371840,
+      "sha256": "28a96e721cba095d7d673935ff67e946330ff2d007d6b6c1ce8b3ecbd4339962"
+    },
+    {
+      "filename": "v5_resposta-Q8_0.gguf.003",
+      "size": 94371840,
+      "sha256": "40e67537dfd839aa66694d90d64eb111699b07d5a83291551f2e6071ee5ca897"
+    },
+    {
+      "filename": "v5_resposta-Q8_0.gguf.004",
+      "size": 94371840,
+      "sha256": "0da578f6a8bf097c110c978c901e657045cf1ea908bb357eb6dbc1bd6bff9a11"
+    },
+    {
+      "filename": "v5_resposta-Q8_0.gguf.005",
+      "size": 8917952,
+      "sha256": "9491f0ce5082bc211ace60368b0dd8aba0a4b0fa3c12a7bfb3d210e91643811e"
+    }
+  ]
+}
