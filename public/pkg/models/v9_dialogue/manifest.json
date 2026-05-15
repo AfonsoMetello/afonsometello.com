@@ -1,0 +1,36 @@
+{
+  "bundle_name": "v9_dialogue_gguf",
+  "version": "1.0.0",
+  "format": "gguf",
+  "model_filename": "v9_dialogue-Q8_0.gguf",
+  "total_size": 386405312,
+  "total_sha256": "5c8ecf437a1de77af411e8dd79e0ab3e908df81c2e9aebaabae893bbffd48a68",
+  "chunk_size": 94371840,
+  "chunks": [
+    {
+      "filename": "v9_dialogue-Q8_0.gguf.001",
+      "size": 94371840,
+      "sha256": "8e107596ff7b66c151e402b51c802ff69992505f0cf431036fd5f31c153b0ede"
+    },
+    {
+      "filename": "v9_dialogue-Q8_0.gguf.002",
+      "size": 94371840,
+      "sha256": "58b48429bcc34105616edccaac3374c2e6ab99458d8f0d80e136639225357701"
+    },
+    {
+      "filename": "v9_dialogue-Q8_0.gguf.003",
+      "size": 94371840,
+      "sha256": "c1d967e40982daf4a9547476d5fe5564b573fac4bee24056f8d5a31d47123905"
+    },
+    {
+      "filename": "v9_dialogue-Q8_0.gguf.004",
+      "size": 94371840,
+      "sha256": "9e358a9635e8d39b5938de87fb72e94a09636a21704748b01c087b65d3f47c7a"
+    },
+    {
+      "filename": "v9_dialogue-Q8_0.gguf.005",
+      "size": 8917952,
+      "sha256": "64f5f43174f7e53f6339c4948fa0bd4764431ca42ae535c5c81aec23d37279f4"
+    }
+  ]
+}
